@@ -1,12 +1,14 @@
 # Uber Trip Analysis Dashboard
 
 ## 📌 Project Overview
-This project is a **comprehensive Uber trip analysis dashboard** developed using **Power BI**. It provides **insightful visualizations** and **data-driven analytics** to understand key trends in Uber trip data, including:
+This project is a **comprehensive Uber trip analysis** developed using **Power BI**. It provides **insightful visualizations** and **data-driven analytics** to understand key trends in Uber trip data, including:
 - Trip duration analysis
-- Fare trends over time
-- User demographics
-- Ride demand patterns
-- Distance vs. price correlation
+- Identification of high-frequency pickup and drop-off zones
+- Breakdown of trip by vehicle category
+- Booking patterns segmented by hour
+- Booking behavior distributed across weekdays
+- Comparison between daytime and nighttime booking trends
+- Ride demand fluctuations
 
 The goal of this dashboard is to help businesses, analysts, and stakeholders make informed decisions based on real Uber trip data.
 
@@ -14,23 +16,19 @@ The goal of this dashboard is to help businesses, analysts, and stakeholders mak
 
 ## 🚀 Features
 ✅ **Interactive Dashboard**: Provides a user-friendly interface with interactive filters.  
-✅ **Dynamic Visualizations**: Includes bar charts, line graphs, and geospatial maps.  
+✅ **Dynamic Visualizations**: Includes bar charts, line graphs, and **geospatial density maps** with **drill-through capabilities** for deeper exploration.  
 ✅ **ETL Processing**: Utilizes Power Query for **data extraction, transformation, and loading (ETL)**.  
 ✅ **Data Cleaning & Transformation**: Removes inconsistencies and optimizes dataset for analysis.  
-✅ **Custom Calculations**: Implements measures like **average fare per mile, peak hours, and customer segmentation**.  
-✅ **Automated Data Refresh**: Ensures real-time updates when new data is added.  
+✅ **Dynamic Calculations (DAX)**: Implements responsive metrics based on filters and slicers.  
+✅ **Custom Calculations**: Includes insights such as **most frequent pickup/drop-off locations** and **farthest trip recorded**.  
 
 ---
 
 ## 📂 Dataset Used
-- **Data Source**: Public Uber trip dataset (CSV format)
-- **Fields Included**:
-  - Pickup & Drop-off Location
-  - Trip Duration
-  - Fare Amount
-  - Distance Traveled
-  - Date & Time
-  - Passenger Count
+- **Data Source**: Uber trip data in **Excel format**
+- **Files Included**:
+  - `Trip_Details.xlsx`: Contains fields like **TripID**, **pickup_Time**,**drop-off_Time**, **pickup_locationID**, **drop-off_locationID**, **trip_distance**,**Fare_amount**, **surge_fee**, **payment_type** and **vehicle type**.
+  - `Location_Table.xlsx`: Contains **locationID**, **Location** and **City**.
 
 ---
 
@@ -46,57 +44,23 @@ The goal of this dashboard is to help businesses, analysts, and stakeholders mak
 
 ## 📊 Dashboard Insights
 The Power BI dashboard reveals:
-- **Peak Demand Hours**: Identifies high-demand time slots for better resource allocation.
-- **Fare Trends**: Shows fare fluctuations based on trip distance, time, and demand.
-- **Top Pickup & Drop-off Locations**: Helps understand common commuting routes.
-- **Trip Duration Analysis**: Determines the efficiency of Uber trips.
-- **Revenue Optimization**: Helps businesses adjust pricing strategies.
+## 📊 Dashboard Insights
+The dashboard uncovers key behavioral patterns and performance insights such as:
+- **Hourly Usage Distribution**: Identifies peak hours of user activity and highlights resource optimization opportunities.
+- **Pickup & Drop-off Hotspots**: Visualizes geographic concentrations of trip initiations and completions to aid in location-based planning.
+- **Vehicle Type Utilization**: Assesses trip volume across different vehicle categories for service demand evaluation.
+- **Day vs. Night Bookings**: Compares user activity during daylight and nighttime hours, assisting in understanding rider preferences.
+- **Weekday Booking Trends**: Highlights fluctuations in trip volume across the week to spot high-traffic business days.
 
 ---
 
-## 📥 Installation & Setup
-1. **Download or Clone the Repository**:
-   ```sh
-   git clone https://github.com/your-username/uber-trip-analysis.git
-   ```
-2. **Open Power BI Desktop** and load the dataset.
-3. **Connect Power Query** to clean and transform data.
-4. **Customize the Dashboard** by applying necessary filters and visuals.
-5. **Publish to Power BI Service** (optional) for online access.
+## 🔗 Live Dashboard
+[<img src= "https://github.com/ArunGuptaaa/Uber-Data-Analysis/blob/main/OverView%20Dashboard.png">](https://app.powerbi.com/view?r=eyJrIjoiY2E0NjExNGMtNzI2ZC00YjNiLWE2NzMtNTc3MTRkMTUzMzRhIiwidCI6ImM2ZTU0OWIzLTVmNDUtNDAzMi1hYWU5LWQ0MjQ0ZGM1YjJjNCJ9)
+
+> Click the image above to explore the **interactive Power BI dashboard** live.
+
 
 ---
 
-## 📸 Screenshots
-### 📊 Dashboard Preview
-*(Insert images of your Power BI dashboard here)*
-
----
-
-## 🛠️ Future Improvements
-🔹 Integrate **real-time Uber API data** for live analysis.  
-🔹 Add **predictive modeling** for fare estimation.  
-🔹 Enhance **geo-mapping features** for better route analysis.  
-
----
-
-## 🤝 Contributing
-Want to improve this project? Follow these steps:
-1. **Fork the repository**.
-2. **Create a feature branch** (`git checkout -b feature-name`).
-3. **Commit changes** (`git commit -m 'Added new feature'`).
-4. **Push to GitHub** (`git push origin feature-name`).
-5. **Create a Pull Request**.
-
----
-
-## 📜 License
-This project is open-source and available under the **MIT License**.
-
----
-
-## 🔗 Connect With Me
-💼 **LinkedIn**: [Your Profile](https://www.linkedin.com/in/your-profile)  
-📧 **Email**: your.email@example.com  
-🚀 **GitHub**: [Your GitHub](https://github.com/your-username)  
 
 Feel free to **star ⭐ this repository** if you found it useful! 🚀
